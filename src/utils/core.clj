@@ -1,6 +1,8 @@
 (ns utils.core
   (:require [buddy.core :as hash]
-            [buddy.core.codecs :as cod])
+            [buddy.core.codecs :as cod]
+            [clojure.string :as str]
+            [clojure.edn :as edn])
   (:import (java.util UUID)))
 
 
@@ -91,3 +93,35 @@
     (map-indexed vector)
     (map (fn [[i v]]
            (take (inc i) v)))))
+
+
+(defn vec* [& xs]
+  (vec (apply list* xs)))
+
+;; keywords
+(defn keyword?->string [x]
+  (if (keyword? x)
+    (name x)
+    x))
+
+;; strings
+(defn string?->keyword [x]
+  (if (string? x)
+    (keyword x)
+    x))
+
+(defn string?->wrapped-string [x]
+  (if (string? x)
+    (str "'" x "'")
+    x))
+
+(defn reduce-multi-slashes [s]
+  (->
+    s
+    (str/replace #"/+" "/")))
+
+;;; numbers
+(defn parse-num
+  "returns num or nil" [x]
+  (when-let [[x- _] (re-matches #"^\d+(\.\d+)?|$" (str/replace (str x) #"," "."))]
+    (edn/read-string x-)))

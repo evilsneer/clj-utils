@@ -11,7 +11,8 @@
   :profiles {:dev {:dependencies [[org.clojure/clojure "1.10.0"]]}}
   :deploy-repositories [["releases"  {:sign-releases false :url "https://clojars.org/repo"}]
                         ["snapshots" {:sign-releases false :url "https://clojars.org/repo"}]]
-  :aliases {"update-readme-version" ["shell" "sed" "-i" "s/\\\\[emptyone\\\\/utils \"[0-9.]*\"\\\\]/[emptyone\\\\/utils \"${:version}\"]/" "README.md"]}
+  :aliases {"update-readme-version" ["shell" "sed" "-i" "s/\\\\[emptyone\\\\/utils \"[0-9.]*\"\\\\]/[emptyone\\\\/utils \"${:version}\"]/" "README.md"]
+            "upg" ["ancient" "upgrade" ":interactive" ":no-tests" ":check-clojure"]}
   :release-tasks [["shell" "git" "diff" "--exit-code"]
                   ["vcs" "assert-committed"]
                   ["change" "version" "leiningen.release/bump-version"]
