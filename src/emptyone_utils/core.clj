@@ -1,4 +1,4 @@
-(ns utils.core
+(ns emptyone-utils.core
   (:require [buddy.core :as hash]
             [buddy.core.codecs :as cod]
             [clojure.string :as str]
