@@ -15,5 +15,8 @@ A Clojure library with some useful stuff (anyone has something like that).
 
 Copyright © 2022 Vladislav Shishkov
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the APACHE LICENSE, VERSION 2.0
+Text version: https://www.apache.org/licenses/LICENSE-2.0.txt
+SPDX short identifier: Apache-2.0
+OSI Approved License: https://opensource.org/licenses/Apache-2.0
+
