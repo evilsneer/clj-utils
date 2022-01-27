@@ -1,5 +1,5 @@
 (ns emptyone-utils.core
-  (:require [buddy.core :as hash]
+  (:require [buddy.core.hash :as hash]
             [buddy.core.codecs :as cod]
             [clojure.string :as str]
             [clojure.edn :as edn])
