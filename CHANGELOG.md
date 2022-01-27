@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.1] — 2022-01-27
+
 ## [1.0.0] — 2020-08-17
 ### Added
 - _CHANGELOG.md_ created.
@@ -20,4 +22,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 [1.0.0]: https://github.com/evilsneer/clj-utils/compare/0.0.0...1.0.0
-[Unreleased]: https://github.com/evilsneer/clj-utils/compare/1.0.0...HEAD
+[1.0.1]: https://github.com/evilsneer/clj-utils/compare/1.0.0...1.0.1
+[Unreleased]: https://github.com/evilsneer/clj-utils/compare/1.0.1...HEAD
