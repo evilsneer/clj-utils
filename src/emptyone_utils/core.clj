@@ -28,7 +28,7 @@
 
 (defn map-k-v-on [coll to-level [kf vf]
                   {:keys [into-coll _start-level]
-                   :or   {into-coll   []
+                   :or   {into-coll    []
                           _start-level 1}
                    :as   opts}]
   (if (= _start-level to-level)
@@ -125,3 +125,10 @@
   "returns num or nil" [x]
   (when-let [[x- _] (re-matches #"^\d+(\.\d+)?|$" (str/replace (str x) #"," "."))]
     (edn/read-string x-)))
+
+(defn group-by-unique [xs & {:keys [by]]
+  (->>
+    xs
+    (group-by :pk)
+    (map (fn [[k v]] [k (first v)]))
+    (into {})))
