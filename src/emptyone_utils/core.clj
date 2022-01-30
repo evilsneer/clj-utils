@@ -126,9 +126,9 @@
   (when-let [[x- _] (re-matches #"^\d+(\.\d+)?|$" (str/replace (str x) #"," "."))]
     (edn/read-string x-)))
 
-(defn group-by-unique [xs & {:keys [by]]
+(defn group-by-unique [by xs]
   (->>
     xs
-    (group-by :pk)
+    (group-by by)
     (map (fn [[k v]] [k (first v)]))
     (into {})))
