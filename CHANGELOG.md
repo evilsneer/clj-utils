@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.7] — 2022-01-30
+
 ## [1.0.6] — 2022-01-30
 
 ## [1.0.5] — 2022-01-27
@@ -38,4 +40,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 [1.0.4]: https://github.com/evilsneer/clj-utils/compare/1.0.3...1.0.4
 [1.0.5]: https://github.com/evilsneer/clj-utils/compare/1.0.4...1.0.5
 [1.0.6]: https://github.com/evilsneer/clj-utils/compare/1.0.5...1.0.6
-[Unreleased]: https://github.com/evilsneer/clj-utils/compare/1.0.6...HEAD
+[1.0.7]: https://github.com/evilsneer/clj-utils/compare/1.0.6...1.0.7
+[Unreleased]: https://github.com/evilsneer/clj-utils/compare/1.0.7...HEAD
