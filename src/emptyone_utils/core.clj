@@ -115,7 +115,7 @@
 
 (defn string?->wrapped-string [x & {:keys [wrap-with] :or   {wrap-with "'"}}]
   (if (string? x)
-    (str "'" x "'")
+    (str wrap-with x wrap-with)
     x))
 
 (defn reduce-multi-slashes [s]
