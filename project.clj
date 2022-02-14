@@ -1,4 +1,4 @@
-(defproject emptyone/utils "1.0.9"
+(defproject emptyone/utils "1.0.10"
   :description "Clojure useful utils"
   :url "https://github.com/evilsneer/clj-utils"
   :license {:name "Eclipse Public License"
