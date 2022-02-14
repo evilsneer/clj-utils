@@ -113,7 +113,7 @@
     (keyword x)
     x))
 
-(defn string?->wrapped-string [x]
+(defn string?->wrapped-string [x & {:keys [wrap-with] :or   {wrap-with "'"}}]
   (if (string? x)
     (str "'" x "'")
     x))
@@ -157,3 +157,8 @@
   the call chain."
   [n & body]
   `(try-times* ~n (fn [] ~@body)))
+
+(defn re-matches-multi [regex-strings x]
+  (->> regex-strings
+    (map #(re-matches (re-pattern %) x))
+    (some some?)))
