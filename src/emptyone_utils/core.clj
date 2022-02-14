@@ -26,6 +26,9 @@
               to-key
               (mapper (from-key %)))))))
 
+(defn hydrate-key [xs key from]
+  (map #(update % key from) xs))
+
 (defn map-k-v-on [coll to-level [kf vf]
                   {:keys [into-coll _start-level]
                    :or   {into-coll    []
