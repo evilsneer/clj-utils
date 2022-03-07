@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.11] — 2022-03-07
+
 - add `core/first-identity`, `core/second-identity`
 
 ## [1.0.10] — 2022-02-14
@@ -52,4 +54,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 [1.0.8]: https://github.com/evilsneer/clj-utils/compare/1.0.7...1.0.8
 [1.0.9]: https://github.com/evilsneer/clj-utils/compare/1.0.8...1.0.9
 [1.0.10]: https://github.com/evilsneer/clj-utils/compare/1.0.9...1.0.10
-[Unreleased]: https://github.com/evilsneer/clj-utils/compare/1.0.10...HEAD
+[1.0.11]: https://github.com/evilsneer/clj-utils/compare/1.0.10...1.0.11
+[Unreleased]: https://github.com/evilsneer/clj-utils/compare/1.0.11...HEAD
