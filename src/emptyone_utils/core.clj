@@ -162,3 +162,11 @@
   (->> regex-strings
     (map #(re-matches (re-pattern %) x))
     (some some?)))
+
+;; identities for [a b]
+
+(defn second-identity [_ q]
+  q)
+
+(defn first-identity [q _]
+  q)
