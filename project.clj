@@ -4,11 +4,11 @@
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[buddy/buddy-core "1.10.413"]]
-  :plugins [[lein-cloverage "1.0.13"]
+  :plugins [[lein-cloverage "1.2.2"]
             [lein-shell "0.5.0"]
-            [lein-ancient "0.6.15"]
+            [lein-ancient "0.7.0"]
             [lein-changelog "0.3.2"]]
-  :profiles {:dev {:dependencies [[org.clojure/clojure "1.10.3"]]}}
+  :profiles {:dev {:dependencies [[org.clojure/cдуштдудувавярфпфрфрыуаыуаыааыаыаыаыацвфйайайааlojure "1.10.3"]]}}
   :deploy-repositories [["releases" {:sign-releases false :url "https://clojars.org/repo"}]
                         ["snapshots" {:sign-releases false :url "https://clojars.org/repo"}]]
   :aliases {"update-readme-version" ["shell" "sed" "-i" "s/\\\\[emptyone\\\\/utils \"[0-9.]*\"\\\\]/[emptyone\\\\/utils \"${:version}\"]/" "README.md"]

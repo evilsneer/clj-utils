@@ -170,3 +170,6 @@
 
 (defn first-identity [q _]
   q)
+
+(defn rand-str [len]
+  (apply str (take len (repeatedly #(char (+ (rand 26) 65))))))
