@@ -113,7 +113,7 @@
     (keyword x)
     x))
 
-(defn string?->wrapped-string [x & {:keys [wrap-with] :or   {wrap-with "'"}}]
+(defn string?->wrapped-string [x & {:keys [wrap-with] :or {wrap-with "'"}}]
   (if (string? x)
     (str wrap-with x wrap-with)
     x))
@@ -135,6 +135,12 @@
     (group-by by)
     (map (fn [[k v]] [k (first v)]))
     (into {})))
+
+(defn groupify-by-unique [f & {:keys [by-key]
+                               :or   {by-key :pk}}]
+  (comp
+    (partial group-by-unique by-key)
+    f))
 
 ;; stolen from https://stackoverflow.com/questions/1879885/clojure-how-to-to-recur-upon-exception
 (defn try-times*
